@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    background: white;
+    color: rgb(0, 0, 0);
+    margin: 1rem auto;
+}
+
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 71px 90px 90px 1fr 48px 48px 48px 24px;
+    gap:5px;
+    
+    
+}
+a{
+    color: black;
+    margin: auto;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 1.2em;
+    
+}
+.div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-content: flex-start;
+}
+.img {
+    width: 100%;
+    object-fit: cover; 
+    overflow: hidden;
+    
+    
+}
+
+.imglogo {
+    margin: auto;
+    
+    padding: 10px;
+}
+
+.img2 {
+    margin:auto;
+    
+}
+
+.search-bar {
+    margin-top: .3rem;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #6699cc;
+}
+
+
+
+.layout {
+    justify-content: center;
+    padding-top: 25px ;
+    display: grid;
+    grid-template-columns: repeat(7, 234px);
+    gap: 20px;
+}
+
+
+.btn {  
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 1.2em;
+}
+
+.btn2 {
+    background: white;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border-color: none;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.overlay{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(29, 28, 28, 0.219);
+    width:100%;
+    height: 100%;
+    border-radius: 30px;
+    opacity: 0;
+    transition:  ease 200ms;
+    
+}
+.btnover2{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: rgb(255, 0, 0);
+}
+.btnover{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    border: none;
+    height: 50px;
+
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.over-btn{
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 50px;
+    border-color: none;
+    padding: 10px;
+    
+}
+
+header {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 16px;
+    padding-right: 25px;
+    height: 50px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 80px;
+}
+
+@media screen and(max-width: 1777px) {
+    .layout{
+        grid-template-columns: 6
+    }
+}
